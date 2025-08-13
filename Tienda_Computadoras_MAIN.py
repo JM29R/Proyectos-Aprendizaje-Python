@@ -1,0 +1,21 @@
+from Tienda_Computadoras_OBJETOS import *
+
+Raton1 = Raton('HP','USB')
+# print(Raton1)
+Raton2 = Raton('Logitech','Bluetooth')
+# print(Raton2)
+Teclado1 = Teclado('Logitech','Bluetooth')
+# print(Teclado1)
+Teclado2 = Teclado('HP','USB')
+#print(Teclado2)
+monitor1= Monitores('Gfast','20 pulgadas')
+# print(monitor1)
+monitor2= Monitores('Razer','20 pulgadas')
+# print(monitor2)
+computadora1=Computadora('HP',monitor1,Teclado1,Raton1)
+# print(computadora1)
+computadora2=Computadora('Logitech',monitor2,Teclado2,Raton2)
+# print(computadora2)
+computadoras1=[computadora1,computadora2]
+Orden1=Orden(computadoras1)
+print(Orden1)

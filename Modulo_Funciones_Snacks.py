@@ -15,14 +15,17 @@ def maquina_snacks(snacks,productos):
         opcion=int( input('selecciona una opcion!'))
         if opcion==1:
             comprar_producto(snacks,productos)
+        #----------------------------------------------------------------------------------------------#
         elif   opcion == 2:
             mostrar_ticket(productos)
+        #----------------------------------------------------------------------------------------------#
         elif opcion == 3:
             print('regresa pronto')
             salir = True
+        #----------------------------------------------------------------------------------------------#
         else:
             print('opcion invalida selecciona otra opcion')
-
+        #----------------------------------------------------------------------------------------------#
 #---------------------------------------------------------------------------------------------------------------------#
 def comprar_producto(snacks,productos):
     mostrar_listado()
@@ -36,6 +39,7 @@ def mostrar_ticket(productos):
     for producto in productos:
         ticket += f"\n\t {producto['nombre']} - {producto['precio']} -"
         total += producto['precio']
+    #----------------------------------------------------------------------------------------------#
     ticket += f'\n\tTOTAL ->${total}'
     print(ticket)
 #---------------------------------------------------------------------------------------------------------------------#
